@@ -1,4 +1,8 @@
-# Welcome to your Expo app 👋
+# Watter Matters
+An app created with React Native and Expo, using a Firebase Realtime Database
+The app connects to the database in order to get data about water consumption in our home
+
+## Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
