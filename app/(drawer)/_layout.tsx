@@ -6,7 +6,11 @@ export default function DrawerLayout() {
     <GestureHandlerRootView>
         <Drawer>
           <Drawer.Screen name="user/(tabs)" options={{ title: "Home" }}/>
-          <Drawer.Screen name="user/places/index" options={{ title: "Places" }} />
+          <Drawer.Screen name="user/places/index" options={{
+            title: "Places",
+            swipeEnabled: false,
+            headerShown: false
+          }} />
         </Drawer>
     </GestureHandlerRootView>
   );

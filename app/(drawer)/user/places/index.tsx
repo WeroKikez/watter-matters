@@ -1,12 +1,19 @@
-import { Link } from "expo-router";
 import { Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { globalStyles } from "@/src/styles";
+import PlaceCard from "@/components/PlaceCard";
 
 export default function Places() {
   return (
-    <View style={{flex: 1, justifyContent: "center", alignItems: "center"}}>
-      <Text style={{fontSize: 24, marginBottom: 20}}>Places</Text>
-
-      <Link href={"user/(tabs)"}>Enriquez's home</Link>
+    <SafeAreaView>
+    <Text style={globalStyles.topLabel} >Places</Text>
+    <View style={globalStyles.container}>
+      <PlaceCard place={{
+        id: "1",
+        name: "Place 1",
+        owner: "Emiliano"
+      }}/>
     </View>
+    </SafeAreaView>
   )
 }
